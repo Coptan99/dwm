@@ -50,6 +50,8 @@ static const Layout layouts[] = {
 	{ "[]=",      tile },    /* first entry is default */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
+	{ "|M|",      centeredmaster },
+	{ ">M>",      centeredfloatingmaster },
 	{ "[D]",      deck },
  	{ "[@]",      spiral },
  	{ "[\\]",      dwindle },
@@ -134,6 +136,8 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_r,      setlayout,      {.v = &layouts[3]} },
 	{ MODKEY,                       XK_r,      setlayout,      {.v = &layouts[3]} },
+	{ MODKEY,                       XK_u,      setlayout,      {.v = &layouts[3]} },
+	{ MODKEY,                       XK_o,      setlayout,      {.v = &layouts[4]} },
 	{ MODKEY|ShiftMask,             XK_r,      setlayout,      {.v = &layouts[4]} },
 	{ MODKEY,                       XK_u,      setlayout,      {.v = &layouts[5]} },
 	{ MODKEY,                       XK_o,      setlayout,      {.v = &layouts[6]} },
