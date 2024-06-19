@@ -40,13 +40,14 @@ static const Rule rules[] = {
 	{ NULL,      NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
 };
 
+#include "vanitygaps.c"
+
 /* layout(s) */
 static float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static int nmaster     = 1;    /* number of clients in master area */
 static int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
-#include "fibonacci.c"
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "[]=",      tile },    /* Default: Master on left, slaves on right */
