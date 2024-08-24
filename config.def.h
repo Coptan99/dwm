@@ -30,6 +30,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     iscentered   isfloating   monitor */
 	{  NULL,      NULL,       NULL,       0,            0,           0,           -1 },
+	{  NULL,      "scratchpad", NULL,     ~0,           1,           1,           -1 },
 };
 
 /* layout(s) */
